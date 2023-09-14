@@ -3,6 +3,7 @@ import express from "express";
 import { database } from "./config.js";
 import { sequelize } from "./src/database/db.js";
 import { Products } from "./src/models/products/index.js";
+import { Suppliers } from "./src/models/pendingSuppliers/index.js";
 
 const app = express();
 
@@ -14,6 +15,7 @@ async function connectDatabase() {
     await sequelize.authenticate();
     await sequelize.sync();
     await Products.sync();
+    await Suppliers.sync();
     console.log(`Database ${database.database} is connected`);
   } catch (error) {
     console.log(`Database is not connected ${error}`);
