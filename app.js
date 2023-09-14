@@ -2,9 +2,10 @@ import cors from "cors";
 import express from "express";
 import { database } from "./config.js";
 import { sequelize } from "./src/database/db.js";
+import { Users } from "./src/models/users/index.js";
 import { Products } from "./src/models/products/index.js";
-import { Suppliers } from "./src/models/pendingSuppliers/index.js";
 import { Clients } from "./src/models/pendingClients/index.js";
+import { Suppliers } from "./src/models/pendingSuppliers/index.js";
 
 const app = express();
 
@@ -17,7 +18,8 @@ async function connectDatabase() {
     await sequelize.sync();
     await Products.sync();
     await Suppliers.sync();
-    await Clients.sync()
+    await Clients.sync();
+    await Users.sync();
     console.log(`Database ${database.database} is connected`);
   } catch (error) {
     console.log(`Database is not connected ${error}`);
