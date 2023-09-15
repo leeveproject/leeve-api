@@ -1,5 +1,5 @@
 import { DataTypes } from "sequelize";
-import {sequelize} from "../../database/db.js";
+import { sequelize } from "../../database/db.js";
 
 export const Clients = sequelize.define('Clients', {
   Name: {
@@ -9,6 +9,10 @@ export const Clients = sequelize.define('Clients', {
   Value: {
     type: DataTypes.STRING,
     allowNull: true
+  },
+  pending: {
+    type: DataTypes.BOOLEAN,
+    allowNull: false
   }
 }, {})
 

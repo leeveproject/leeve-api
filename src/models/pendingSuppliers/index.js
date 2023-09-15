@@ -10,6 +10,10 @@ export const Suppliers = sequelize.define('Suppliers', {
     type: DataTypes.STRING,
     allowNull: true
   },
+  pending: {
+    type: DataTypes.BOOLEAN,
+    allowNull: false
+  }
 }, {})
 
 console.log(Suppliers === sequelize.models.Suppliers);
