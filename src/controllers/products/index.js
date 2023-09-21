@@ -47,7 +47,7 @@ export async function updateProducts(req, res) {
     }
 
     return res.status(404).json({
-      message: "user not exist"
+      message: "product not exist"
     })
 
 
