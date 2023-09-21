@@ -10,7 +10,7 @@ export const Clients = sequelize.define('Clients', {
     type: DataTypes.STRING,
     allowNull: true
   },
-  pending: {
+  Pending: {
     type: DataTypes.BOOLEAN,
     allowNull: false
   }
