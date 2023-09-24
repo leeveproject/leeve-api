@@ -10,11 +10,11 @@ export const Users = sequelize.define('Users', {
     type: DataTypes.STRING,
     allowNull: false
   },
-  email: {
+  Email: {
     type: DataTypes.STRING,
     allowNull: true
   },
-  password: {
+  Password: {
     type: DataTypes.STRING,
     allowNull: false
   },
