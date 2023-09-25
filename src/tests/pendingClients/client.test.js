@@ -3,7 +3,7 @@ import { app } from "../../../app.js";
 
 describe("testing pending clients controller in routes", () => {
 
-  it("show all clients", async () => {
+  it("show all pending", async () => {
     const res = await request(app).get("/clients")
 
     expect(res.status).toBe(200)
