@@ -50,7 +50,7 @@ npm run test:specific
 |-- database
 |-- models
 |-- routes
-|-- tests
+|`tests
 ` app.js
 ` index.js
 ```
