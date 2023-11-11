@@ -6,10 +6,10 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "test:client": "jest src/tests/client.test.js",
-    "test:product": "jest src/tests/product.test.js",
-    "test:supplier": "jest src/tests/supplier.test.js",
-    "test:user": "jest src/tests/user.test.js",
+    "test:client": "jest tests/client.test.js",
+    "test:product": "jest tests/product.test.js",
+    "test:supplier": "jest tests/supplier.test.js",
+    "test:user": "jest tests/user.test.js",
     "start": "nodemon index.js"
   },
   "author": "",
